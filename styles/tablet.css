@@ -1,0 +1,39 @@
+@media (max-width: 1250px) {
+  .archives {
+    line-height: 1;
+  }
+}
+
+@media (max-width: 900px) {
+  * {
+    font-size: 16px;
+  }
+  /* .main {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-areas: "ct sd";
+  } */
+  .content {
+    & > h1 {
+      font-size: large;
+    }
+  }
+  .content blockquote {
+    margin-left: 0px;
+  }
+
+  .content figure {
+    margin-left: 0px;
+  }
+
+  .date {
+    color: slategray;
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 700px) {
+  .content code {
+    font-size: small;
+  }
+}

@@ -1,0 +1,96 @@
+a {
+  text-decoration: underline;
+  color: rgb(73, 73, 255);
+}
+
+.header #title-blg {
+  color: #1d5d9b;
+}
+
+/* Style for main */
+.main {
+  height: 90%;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-template-areas: "ct sd";
+}
+
+.content {
+  grid-area: ct;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding: 15px;
+  & > h1 {
+    font-size: xx-large;
+  }
+}
+
+.cre-post {
+  color: slategray;
+}
+
+.content blockquote {
+  background-color: aliceblue;
+}
+
+.content figure {
+  border: 1px solid burlywood;
+}
+
+.content code {
+  border: 1px solid burlywood;
+  font-family: Consolas, "courier new";
+  color: crimson;
+  background-color: #f1f1f1;
+  padding: 2px;
+  font-size: 105%;
+}
+
+.btn-navigate {
+  padding: 15px;
+  margin-bottom: 15px;
+  & > button {
+    border-radius: 20px;
+    padding: 10px 20px;
+    background-color: #ffffff;
+  }
+}
+
+.older-btn {
+  border: 1px solid #1d5d9b;
+  color: #1d5d9b;
+  &:hover {
+    background-color: #1d5d9b;
+    color: #ffffff;
+  }
+}
+.newer-btn {
+  border: 1px solid #b1b1b1;
+  color: #4e4e4e;
+  &:hover {
+    background-color: #8d8d8d;
+    color: #ffffff;
+  }
+}
+
+/* Style for sidebar */
+.sidebar {
+  grid-area: sd;
+  padding: 10px;
+}
+
+.about {
+  background-color: aliceblue;
+  padding: 10px;
+}
+
+.archives {
+  padding: 10px;
+  line-height: 0.5;
+}
+
+.archives h1 {
+  padding-top: 30px;
+}
