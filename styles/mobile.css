@@ -4,7 +4,7 @@
     display: none;
   }
 
-  .container {
+  #container {
     display: grid;
     height: 100vh;
     width: 98vw;
@@ -16,11 +16,11 @@
     grid-template-rows: 100px auto 100px;
   }
 
-  .header {
+  #container .header {
     grid-area: hd;
   }
 
-  .main {
+  #container .main {
     grid-area: main;
     height: 90%;
     display: grid;
@@ -29,19 +29,28 @@
     gap: 10px 0;
   }
 
-  .content blockquote {
+  #container .main-blg {
+    grid-area: main;
+    height: 90%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas: "ct" "sd";
+    gap: 10px 0;
+  }
+
+  #content blockquote {
     background-color: aliceblue;
     width: auto;
     margin-right: 0px;
   }
 
-  .content figure {
+  #content figure {
     border: 1px solid burlywood;
     width: auto;
     margin-right: 0px;
   }
 
-  .footer {
+  #footer {
     grid-area: ft;
   }
 }

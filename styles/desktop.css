@@ -1,3 +1,8 @@
+/* import css here */
+@import "mobile.css" screen and (max-width: 500px);
+@import "tablet.css";
+@import url("blog-post.css");
+
 /* define font for all page */
 * {
   font-family: "Arial", sans-serif;
